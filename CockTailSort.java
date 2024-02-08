@@ -1,5 +1,12 @@
 import java.util.ArrayList;
+/**
+ * Clase CocktailSort método para ordenar una lista de enteros utilizando el algoritmo CocktailSort.
+ */
 class CocktailSort {
+    /**
+     * Ordena una lista de enteros utilizando el algoritmo CocktailSort.
+     * @param arr Lista de enteros a ser ordenada.
+     */
     void cocktailSort(ArrayList<Integer> arr) {
         boolean swapped = true;
         int start = 0;

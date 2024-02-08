@@ -1,5 +1,12 @@
 import java.util.ArrayList;
+/**
+ * Clase GnomeSort método para ordenar una lista de enteros utilizando el algoritmo GnomeSort.
+ */
 public class GnomeSort {
+    /**
+     * Ordena una lista de enteros utilizando el algoritmo GnomeSort.
+     * @param arr Lista de enteros a ser ordenada.
+     */
     public static void gnomeSort(ArrayList<Integer> arr) {
         int index = 0;
 

@@ -1,6 +1,15 @@
 import java.util.ArrayList;
-
+/**
+ * Clase MergeSort método para ordenar una lista de enteros utilizando el algoritmo MergeSort.
+ */
 class MergeSort {
+    /**
+     * Fusiona dos subconjuntos de una lista ordenada en un solo subconjunto ordenado.
+     * @param arr Lista de enteros a ser fusionada.
+     * @param l Índice más bajo del primer subconjunto.
+     * @param m Índice medio que divide los dos subconjuntos.
+     * @param r Índice más alto del segundo subconjunto.
+     */
     void merge(ArrayList<Integer> arr, int l, int m, int r) {
         int n1 = m - l + 1;
         int n2 = r - m;
@@ -39,7 +48,12 @@ class MergeSort {
             k++;
         }
     }
-
+    /**
+     * Ordena recursivamente una lista de enteros utilizando el algoritmo MergeSort.
+     * @param arr Lista de enteros a ser ordenada.
+     * @param l Índice más bajo de la lista a ser ordenada.
+     * @param r Índice más alto de la lista a ser ordenada.
+     */
     void mergesort(ArrayList<Integer> arr, int l, int r) {
         if (l < r) {
             int m = (l + r) / 2;

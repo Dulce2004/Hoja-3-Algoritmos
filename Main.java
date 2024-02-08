@@ -1,7 +1,9 @@
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
-
+/**
+ * Clase Main contiene el método main para ejecutar el programa principal.
+ */
 public class Main {
     public static void main(String[] args) {
         // Crear una lista de tamaño 10

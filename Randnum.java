@@ -3,12 +3,22 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Random;
 
+/**
+ * Clase Randnum métodos para generar números aleatorios y guardarlos en un archivo CSV.
+ */
 public class Randnum {
+    /**
+     * Genera un número entero aleatorio en el rango [1, 10].
+     * @return Número aleatorio generado.
+     */
     public static int randSingle() {
         Random rand = new Random();
         return rand.nextInt(10) + 1;
     }
-
+    /**
+     * Genera una lista de 10 números enteros aleatorios en el rango [1, 10] y los guarda en un archivo CSV.
+     * @return Lista de números aleatorios generados.
+     */
     public static ArrayList<Integer> rand() {
         Random rand = new Random();
 
