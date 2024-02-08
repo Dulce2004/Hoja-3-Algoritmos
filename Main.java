@@ -8,6 +8,9 @@ public class Main {
         ArrayList<Integer> lista = new ArrayList<>(10);
         Random rand = new Random();
         Scanner scanner = new Scanner(System.in);
+        CocktailSort ob = new CocktailSort();
+        int n = lista.size()+10;
+        System.out.println("Tamaño de n: "+n);
 
         // Llenar la lista con 10 valores aleatorios
         for (int i = 0; i < 10; i++) {
@@ -21,7 +24,7 @@ public class Main {
         // Aumentar el tamaño de la lista en 1 en cada ciclo hasta tener 20 números
         for (int i = 10; i < 3000; i++) {
             lista.add(rand.nextInt(100)); // Genera un número aleatorio entre 0 y 99
-            GnomeSort.gnomeSort(lista);
+            ob.cocktailSort(lista);
         }
 
         // Cerrar el scanner al final del programa
